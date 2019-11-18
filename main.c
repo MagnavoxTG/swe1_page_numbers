@@ -11,7 +11,7 @@ int main() {
 
     while ((ch = fgetc(stdin)) != EOF) {
         // Once it finds an enter it writes a new page number
-        if ((ch = fgetc(stdin)) == "\n"){
+        if (ch == "\n"){
             count ++;
             printf("Page %6i", count);
         }
