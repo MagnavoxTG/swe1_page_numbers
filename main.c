@@ -6,9 +6,11 @@
 int main() {
     int ch, count = 1;
 
+    // First page number
     printf("Page %6i", count);
 
     while ((ch = fgetc(stdin)) != EOF) {
+        // Once it finds an enter it writes a new page number
         if ((ch = fgetc(stdin)) == "\n"){
             count ++;
             printf("Page %6i", count);
